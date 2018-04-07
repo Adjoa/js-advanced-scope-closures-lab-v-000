@@ -1,5 +1,9 @@
 function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
-    endBlock - startBlock <= blockRange ? true : false
+    if (endBlock - startBlock <= blockRange){
+      return `within range by ${endBlock - startBlock}`
+    } else {
+      return `${endBlock - startBlock} blocks out of range`
+    }
   }
 }
