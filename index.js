@@ -5,9 +5,9 @@ function produceDrivingRange(blockRange) {
     let range = endBlock - startBlock
 
     if (range <= blockRange){
-      return `within range by ${range}`
+      return `within range by ${blockRange - range}`
     } else {
-      return `${blockRange - range} blocks out of range`
+      return `${range - blockRange} blocks out of range`
     }
   }
 }
