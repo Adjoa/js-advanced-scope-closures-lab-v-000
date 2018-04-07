@@ -17,3 +17,14 @@ function produceTipCalculator(percentageDecimal) {
     return cost * percentageDecimal
   }
 }
+
+function createDriver() {
+  let driverId = 0
+  
+  return class {
+    constructor(name) {
+      this.id = ++ driverId
+      this.name = name
+    }
+  }
+}
