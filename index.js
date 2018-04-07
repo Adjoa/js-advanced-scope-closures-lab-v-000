@@ -11,3 +11,9 @@ function produceDrivingRange(blockRange) {
     }
   }
 }
+
+function produceTipCalculator(percentageDecimal) {
+  return function(cost) {
+    return cost * percentageDecimal
+  }
+}
